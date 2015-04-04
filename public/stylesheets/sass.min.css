@@ -1,0 +1,1 @@
+.test{color:red}.animate{transition-property:transform,color;transition-timing:ease-out;transition-duration:.3s;color:red}.animation:active{transform:scale(1.02);color:#00f}

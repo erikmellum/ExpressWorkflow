@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <title><%= title %></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Angular JS -->
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+    <script src="lib/angular-animate/angular-animate.min.js"></script>
+    <script src="lib/angular-resource/angular-resource.min.js"></script>
+    <script src="lib/angular-cookies/angular-cookies.min.js"></script>
+    <script src="javascripts/app.js"></script>
+    <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <!-- Script -->
+    <script src="lib/modernizr/modernizr.js"></script>
+    <!-- Custom CSS -->
+    <link rel='stylesheet' href='/stylesheets/main.css' />
+    <link rel='stylesheet' href='/stylesheets/sass.css' />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <section id="container" >
+      <!--header start-->
+      <header class="header">
+        <div class="sidebar">
+            <div class=""></div>
+        </div>
+        <!--logo start-->
+        <a href="#/search" class="logo"><b>Erik & Krissy</b></a>
+        <div class="flexParent">
+          <a href="#/home" class="flexChild">Home</a>
+          <a href="#/about" class="flexChild">About</a>
+          <a href="#/blog" class="flexChild">Blog</a>
+          <a href="#/contact" class="flexChild">Contact</a>
+        </div>
+        <!--logo end-->
+      </header>
+      <ng-view class="mainArea">
+
+      </ng-view>
+      <footer class="footer">
+        <div class="text-center">
+            2015 - Erik Mellum
+        </div>
+      </footer>
+      <script src="javascripts/script.js"></script>
+      <!-- Jquery -->
+      <script src="lib/jquery/dist/jquery.min.js"></script>
+      <!-- Foundation -->
+      <script src="/lib/fastclick/lib/fastclick.js"></script>
+      <script src="lib/foundation/js/foundation.min.js"></script>
+      <script>
+	Foundation.global.namespace = '';
+        $(document).foundation();
+      </script>
+    </section
+  </body>
+</html>
